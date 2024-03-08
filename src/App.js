@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+ import { createBrowserRouter,  Route, createRoutesFromElements, RouterProvider } from 'react-router-dom'
+
+import Addressbookform from './Components/Addressbookform';
+import Addressbooklist from './Components/Addressbooklist';
+import Rootlayout from './Components/routing/Rootlayout';
+
+
+// Nested Routes and Layout
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<Rootlayout />}>
+      <Route index element={<Addressbookform />} />
+      <Route path='Addressbooklist' element={<Addressbooklist />} />
+      </Route>
+  )
+)
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+         <RouterProvider router={router} />
     </div>
   );
 }

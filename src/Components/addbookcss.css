@@ -1,0 +1,134 @@
+
+body {
+    /* background-image: url("wallpaper2you_461362.jpeg"); */
+    background-color: #cdf1f3;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+
+    border: 2px solid rgb(29, 31, 25);
+    /* Set container background color */
+    padding: 40px;
+    /* Add padding to the container */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 60%;
+  }
+
+  .tablecontainer{
+    border: 2px solid rgb(29, 31, 25);
+    /* Set container background color */
+    padding: 70px;
+    /* Add padding to the container */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* Adjust top margin */
+  }
+h1 {
+    color: rgb(70, 151, 221);
+    text-align: center;
+    margin-top: 2%;
+    font-family: 'Brush Script MV';
+    font-size: 75px;
+    text-shadow: 4px 4px 4px #476062;
+    border-bottom-style: solid;
+    border-bottom-width:15px ;
+    border-color: #389892ef;
+    border-radius: 60%;
+  
+  }
+
+div #table {
+    margin-top: 5%;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+form label {
+    color: #057674;
+    font-size: 25px;
+    font-family: Garamond, serif;
+    font-style: solid;
+    align-items: center;
+    
+  }
+  label {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-right: auto;
+  }
+  
+  input,
+  select,
+  textarea {
+    margin-bottom: 15px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 3px solid #23870a;
+  }
+  
+  
+  input:hover,
+  select:hover,
+  textarea:hover{
+    background-color: hsl(150, 64%, 95%);
+    
+  }
+
+   table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    position: relative;
+  }
+  
+  table th,
+  table td {
+    padding: 12px;
+    border-bottom: 3px solid #000000;
+    text-align: center;
+    color: #24504a;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+header nav {
+  display: flex;
+  gap: 16px;
+  justify-content: end;
+  width: cover;
+  margin: 1%;  
+  border-bottom: 3px solid;
+  border-color: rgb(7, 10, 13);
+}
+
+
+
+header nav a{
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 1px solid;
+  margin-bottom: 10px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header nav a.active{
+  background: rgb(247, 230, 230);
+}
+
+#adddata{
+  width: 10%;
+  font-size: 23px;
+  font-weight: bolder;
+  margin-top: 2%;
+}
+
